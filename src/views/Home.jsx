@@ -1,8 +1,13 @@
 import React from 'react'
+import Section from '../components/Sections/Section'
 
 const Home = () => {
   return (
-    <div className='text-link'>Home</div>
+    <div className='grid gap-y-8 '>
+      <Section title="Recently played" more="./seeall"/>
+      <Section title="Popular radio" more="./seeall"/>
+      <Section title="Daily mix" more="./seeall"/>
+    </div>
   )
 }
 

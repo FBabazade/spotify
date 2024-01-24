@@ -9,9 +9,9 @@ const Favories = () => {
       <img src={heart} alt="Heart" className="w-12 h-12 rounded" />
     </span>
     <div>
-      <p className="font-bold text-base text-active">Bəyənilən musiqilər</p>
+      <p className="font-bold text-base text-primary">Bəyənilən musiqilər</p>
       <div className="flex flex-row gap-0.5 items-center">
-        <span className="mr-1 text-active">
+        <span className="mr-1 text-primary">
           <Icon name="pin" size={12} />
         </span>
         <p>Seçilen • 52 mahnı</p>

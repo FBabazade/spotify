@@ -7,7 +7,7 @@ const Menu = () => {
   return (
     <nav>
       <div className="flex flex-col gap-2 ">
-        <div className="flex flex-col py-2 px-3  bg-backdrop rounded-lg">
+        <div className="flex flex-col py-2 px-3 bg-backdrop rounded-lg">
           {" "}
           <NavLink
             to={"/"}
@@ -55,7 +55,7 @@ const Menu = () => {
               Playlistlər
             </span>
           </div>
-          <Playlistler/>
+          <Playlistler />
         </div>
       </div>
     </nav>

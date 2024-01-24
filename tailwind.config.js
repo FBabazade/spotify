@@ -11,9 +11,10 @@ module.exports = {
         primary:'#1db954',
         link:'#b3b3b3',
         iconhover:'#282828',
-        active: '#117a37'
+        black2: '#181818'
         
-      }
+      },
+      
     },
   },
   plugins: [],

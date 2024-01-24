@@ -10,29 +10,36 @@ const User = () => {
           className="p-0.5 !rounded-full mMx2LUixlnN_Fu45JpFB Xz3tlahv16UpqKBW5HdK Yn2Ei5QZn19gria6LjZj"
         />
       </Menu.Button>
-      <Menu.Items className="flex flex-col items-start w-48 gap-1 bg-iconhover absolute top-full right-0 rounded-md">
+      <Menu.Items className="flex flex-col items-start w-40 gap-1 p-0.5 bg-black absolute top-full right-0 rounded translate-y-2">
         <Menu.Item>
           {({ active }) => (
             <a
-              className={`${active && "bg-blue-500"}`}
+              className={`p-2 w-full ${active && "bg-backdrop "}`}
               href="/account-settings"
             >
-              Account settings
+             Profile
             </a>
           )}
         </Menu.Item>
         <Menu.Item>
           {({ active }) => (
             <a
-              className={`${active && "bg-blue-500"}`}
+            className={`p-2 w-full ${active && "bg-backdrop "}`}
               href="/account-settings"
             >
-              Documentation
+                Account settings
             </a>
           )}
         </Menu.Item>
-        <Menu.Item disabled>
-          <span className="opacity-75">Invite a friend (coming soon!)</span>
+        <Menu.Item>
+          {({ active }) => (
+            <a
+            className={`p-2 w-full ${active && "bg-backdrop "}`}
+              href="/account-settings"
+            >
+                Log out
+            </a>
+          )}
         </Menu.Item>
       </Menu.Items>
     </Menu>

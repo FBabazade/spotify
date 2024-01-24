@@ -6,12 +6,12 @@ function App() {
   return (
     <>
       <Router>
-        <div className="flex flex-col justify-between">
-        <div className="wrapper ">
-          <Sidebar />
-          <Content />
-        </div>
-        <Footer />
+        <div className="flex flex-col overflow-hidden justify-between ">
+          <div className="wrapper">
+            <Sidebar />
+            <Content />
+          </div>
+          <div className="relative"><Footer/></div>
         </div>
       </Router>
     </>

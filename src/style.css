@@ -18,6 +18,12 @@
   }
 }
 
+.scroll-smooth {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: calc(100%-762px);
+}
+
 
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com

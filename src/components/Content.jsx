@@ -3,15 +3,18 @@ import Navbar from "./Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "../views/Home";
 import Search from "../views/Search";
+import "../style.css"
 
 const Content = () => {
   return (
-    <div className="flex-auto bg-backdrop rounded-lg">
+    <div className="flex-auto bg-backdrop rounded-lg overflow-hidden ">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
-      </Routes>
+      <div className="px-8 py-5 scroll-smooth max-h-screen" >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+      </div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const playlists = [
 ];
 const Playlistler = () => {
   return (
-    <div className="px-2 pb-2 flex flex-col gap-2 h-[582px]">
+    <div className="px-2 pb-2 flex flex-col gap-2 h-[590px]">
       <Header />
       <div
         className="flex flex-col overflow-y-auto max-h-screen "
