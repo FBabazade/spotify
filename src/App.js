@@ -11,7 +11,7 @@ function App() {
             <Sidebar />
             <Content />
           </div>
-          <div className="relative"><Footer/></div>
+          <div className="flex justify-center"><Footer/></div>
         </div>
       </Router>
     </>

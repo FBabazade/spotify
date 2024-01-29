@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Cards from "./Cards";
+import items from "../../service/data";
 
 const Section = ({ title, more = false }) => {
   return (
@@ -11,7 +12,7 @@ const Section = ({ title, more = false }) => {
         </h3>
         {more && <NavLink className={"text-xs font-semibold text-link hover:underline"} to={more}>See all</NavLink>}
       </header>
-      <Cards/>
+      <div className="grid grid-cols-6 gap-x-6"> {items.map(item => <Cards item={item} key={item.id}/> )}</div>
     </section>
   );
 };
